@@ -21,4 +21,5 @@ export default {
       template: path.resolve(__dirname, 'index.html'),
     }),
   ],
-}
+  devServer: { inline: true },
+};
