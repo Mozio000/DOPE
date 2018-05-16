@@ -12,6 +12,13 @@ export default {
       loader: 'babel-loader',
     }]
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    modules: [
+      path.resolve(__dirname),
+      'node_modules'
+    ]
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
